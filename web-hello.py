@@ -5,6 +5,11 @@ app = Flask(__name__)
 def hello():
     return "Hello World!"
 
+@app.route("/goodbye")
+def goodbye:
+    print("for console")
+    return "Goodbye world"
+
 if __name__ == "__main__":
-    app.run()
+    app.run( host="0.0.0.0")
 
